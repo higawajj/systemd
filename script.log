@@ -1,0 +1,10 @@
+Script started on Tue 15 Aug 2023 06:53:52 PM UTC
+]0;root@systemd:/usr/lib/systemd/system[?1034h[root@systemd system]# systemctl start httpd@first
+]0;root@systemd:/usr/lib/systemd/system[root@systemd system]# systemctl start httpd@first[K[K[K[K[Ksecond
+]0;root@systemd:/usr/lib/systemd/system[root@systemd system]# ss -tulpn | grep httpd
+tcp    LISTEN     0      128    [::]:8080               [::]:*                   users:(("[01;31m[Khttpd[m[K",pid=22161,fd=4),("[01;31m[Khttpd[m[K",pid=22160,fd=4),("[01;31m[Khttpd[m[K",pid=22159,fd=4),("[01;31m[Khttpd[m[K",pid=22158,fd=4),("[01;31m[Khttpd[m[K",pid=22157,fd=4),("[01;31m[Khttpd[m[K",pid=22156,fd=4))
+tcp    LISTEN     0      128    [::]:80                 [::]:*                   users:(("[01;31m[Khttpd[m[K",pid=22149,fd=4),("[01;31m[Khttpd[m[K",pid=22148,fd=4),("[01;31m[Khttpd[m[K",pid=22147,fd=4),("[01;31m[Khttpd[m[K",pid=22146,fd=4),("[01;31m[Khttpd[m[K",pid=22145,fd=4),("[01;31m[Khttpd[m[K",pid=22144,fd=4))
+]0;root@systemd:/usr/lib/systemd/system[root@systemd system]# exit
+exit
+
+Script done on Tue 15 Aug 2023 06:54:21 PM UTC
